@@ -1,0 +1,40 @@
+﻿.home {
+    &__container {
+        padding-top: 1.5rem;
+        row-gap: 1.5rem;
+    }
+    &__image {
+        width: 320px;
+        justify-self: center;
+    }
+    &__data {
+        text-align: center;
+    }
+    &__title {
+        font-size: 24px;
+        line-height: 140%;
+        margin-bottom: 0.5rem;
+    }
+    &__description {
+        font-size: 13px;
+        padding: 0.2rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.button {
+    display: inline-block;
+    color: #fff;
+    background-color: #DC3845;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22.5px;
+    padding: 20px 48px;
+    border-radius: 3rem;
+    transition: all .5s ease-out;
+    border: 1px solid;
+    &:hover {
+        background-color: #fff;
+        color: #DC3845;
+    }
+}

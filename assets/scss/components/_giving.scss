@@ -1,0 +1,24 @@
+﻿.giving {
+    &__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem 1.5rem;
+    }
+    &__content {
+        text-align: center;
+    }
+    &__img {
+        width: 100px;
+        transition: .3s;
+    }
+    &__title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0.25rem;
+    }
+    &__description {
+        font-size: 13px;
+    }
+    &__img:hover{
+        transform: translateY(-.25rem);
+    }
+}

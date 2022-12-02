@@ -1,0 +1,98 @@
+﻿
+.header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    &.scroll-header{
+        box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
+    }
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        height: 56px;
+        align-items: center;
+        &__logo,
+        &__close,
+        &__toggle {
+            color: #282525;
+        }
+        &__logo {
+            display: flex;
+            align-items: center;
+            column-gap: 0.25rem;
+            font-weight: 500;
+        }
+        &__logo-img {
+            width: 1.5rem;
+        }
+        &__toggle {
+            display: inline-flex;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        &__menu {
+            &.show-menu {
+                top: 0;
+            }
+            @media screen and (max-width: 767px) {
+                position: fixed;
+                background-color: #fff;
+                top: -100%;
+                left: 0;
+                width: 100%;
+                padding: 4rem 0;
+                border-radius: 0 0 1.5rem 1.5rem;
+                box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
+                transition: 0.4s;
+            }
+        }
+        &__img{
+            width: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotate(-15deg)
+        }
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 1.5rem;
+        }
+        &__link {
+            color: #282525;
+            font-weight: 500;
+            transition: .3s;
+            &:hover {
+                color: #DC3845;
+            }
+        }
+        &__close{
+            font-size: 2rem;
+            position: absolute;
+            top: 0.5rem;
+            right: 1rem;
+            cursor: pointer;
+        }
+        &__btns {
+            display: flex;
+            align-items: center;
+            column-gap: 1rem;
+        }
+    }
+}
+.active-link {
+    color: #DC3845 !important;
+}
+.change-theme {
+    color: #282525;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+
+
+

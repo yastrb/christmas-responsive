@@ -1,0 +1,40 @@
+﻿.gift {
+    &__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    &__card {
+        display: grid;
+        position: relative;
+        background-color: #fff;
+        box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
+        padding: 1.5rem;
+        &:hover {
+            .gift__img {
+                transform: translateY(-.25rem);
+            }
+        }
+    }
+    &__img {
+        width: 100px;
+        justify-self: center;
+        margin-bottom: 0.25rem;
+        transition: .3s;
+    }
+    &__icon {
+        font-size: 1.5rem;
+        color: #DC3845;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+    }
+    &__price {
+        font-size: 1rem;
+    }
+    &__title {
+        font-size: 0.75rem;
+        font-weight: 400;
+    }
+}
+

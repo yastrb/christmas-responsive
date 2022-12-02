@@ -1,0 +1,38 @@
+﻿.message {
+    &__container {
+        row-gap: 3rem;
+        padding: 2.5rem 1.5rem 2.5rem;
+        border-radius: 1.25rem;
+        background-color: #DC3845;
+    }
+    &__form {
+        text-align: center;
+    }
+    &__title {
+        color: #fff;
+        margin-bottom: 1.5rem;
+    }
+    &__input {
+        width: 100%;
+        background: #fff;
+        color: #918889;
+        padding: 1rem 1.5rem;
+        border-radius: 3rem;
+        border: none;
+        outline: none;
+        margin-bottom: 1rem;
+    }
+    &__button {
+        background-color: #282525;
+        width: 100%;
+        border: none;
+    }
+    &__button:hover {
+        background-color: #282525;
+    }
+    &__img {
+        width: 200px;
+        justify-self: center;
+        transform: rotate(15deg);
+    }
+}

@@ -63,3 +63,21 @@ const scrollUp = () =>{
 						: scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
+
+
+// -------scroll reveal animation------
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true
+})
+
+sr.reveal('.home__image, .new__container, .footer__container');
+sr.reveal('.home__data', {delay: 500});
+sr.reveal('.giving__content, .gift__card', {interval: 100});
+sr.reveal('.celebrate__data, .message__form', {origin: 'left'});
+sr.reveal('.celebrate__img, .message__img', {origin: 'right'});
